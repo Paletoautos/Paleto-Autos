@@ -1353,7 +1353,7 @@ input, select, textarea {
 /* FIX uneven car thumbnails */
 a.thumbnail {
   display: block;
-  height: 220px;        /* controls thumbnail height */
+  height: 320px;        /* controls thumbnail height */
   overflow: hidden;
 }
 
@@ -1389,6 +1389,7 @@ body {
 #footer {
   background-color: #000 !important;
 }
+
 
 
 
