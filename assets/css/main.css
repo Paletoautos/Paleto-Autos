@@ -1378,6 +1378,18 @@ a.thumbnail img {
   display: block;
   margin-bottom: 1.5rem;
 }
+/* Force full black background */
+body {
+  background-color: #000 !important;
+}
+
+#wrapper,
+#main,
+#header,
+#footer {
+  background-color: #000 !important;
+}
+
 
 
 
