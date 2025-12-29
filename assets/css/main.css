@@ -1363,4 +1363,13 @@ a.thumbnail img {
   object-fit: cover;    /* fills the box, crops excess */
   display: block;
 }
+.header-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+
 
