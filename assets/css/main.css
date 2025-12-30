@@ -1389,6 +1389,20 @@ body {
 #footer {
   background-color: #000 !important;
 }
+/* Fade logo image edges into black */
+#header .header-image {
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,1) 60%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
 
 
 
