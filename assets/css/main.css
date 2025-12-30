@@ -1418,8 +1418,22 @@ body {
     rgba(0,0,0,0.9) 100%
   );
 }
-
+/* Guaranteed edge fade into black */
+#header .logo-fade {
+  overflow: hidden;
+  background: #000;
+  box-shadow: inset 0 0 120px 60px #000; /* <-- this creates the fade */
 }
+
+/* Your banner sizing */
+#header .logo-fade .header-image {
+  width: 100%;
+  height: 360px;      /* adjust */
+  object-fit: cover;
+  display: block;
+}
+
+
 
 
 
