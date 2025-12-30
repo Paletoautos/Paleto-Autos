@@ -1389,19 +1389,38 @@ body {
 #footer {
   background-color: #000 !important;
 }
-/* Fade logo image edges into black */
-#header .header-image {
-  -webkit-mask-image: radial-gradient(
+/* Make sure header can layer effects */
+#header { position: relative; }
+
+/* Wrapper that holds the image */
+#header .logo-fade {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Keep your existing banner sizing */
+#header .logo-fade .header-image {
+  width: 100%;
+  height: 360px;      /* adjust as you like */
+  object-fit: cover;
+  display: block;
+}
+
+/* The fade/vignette overlay (this is the edge blending) */
+#header .logo-fade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
     ellipse at center,
-    rgba(0,0,0,1) 60%,
-    rgba(0,0,0,0) 100%
-  );
-  mask-image: radial-gradient(
-    ellipse at center,
-    rgba(0,0,0,1) 60%,
-    rgba(0,0,0,0) 100%
+    rgba(0,0,0,0) 55%,
+    rgba(0,0,0,0.9) 100%
   );
 }
+
+}
+
 
 
 
